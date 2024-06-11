@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@mixin manrope-500 {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin manrope-700 {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-size: 0.8125rem;
+  @include manrope-500; // Default body font
+}
+
+// ### Body Copy
+// - Font size: 13px
+
+// ### Headings
+// - Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+// - Weights: 500, 700
