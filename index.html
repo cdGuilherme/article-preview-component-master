@@ -3,36 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="/css/style.css" />
     <!-- https://www.w3schools.com/tags/att_script_defer.asp -->
     <script defer src="/script/main.js"></script>
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
+    <article class="card">
+      <section class="card__illustration">
+        <img
+          class="illustration__image"
+          src="/images/drawers.jpg"
+          alt='Green dresser with six drawers, a vase of dried flowers on top and a white
+    square frame that reads "Love will keep us alive"'
+        />
+      </section>
+      <section class="card__article">
+        <h1 class="article__title">
+          Shift the overall look and feel by adding these wonderful touches to furniture in your
+          home
+        </h1>
 
-    Shift the overall look and feel by adding these wonderful
-    touches to furniture in your home
+        <p class="article__description">
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and
+          uninviting. I’ve got some simple tips to help you make any room feel complete.
+        </p>
 
-    Ever been in a room and felt like something was missing? Perhaps
-    it felt slightly bare and uninviting. I’ve got some simple tips
-    to help you make any room feel complete.
+        <img
+          class="article__author--profile-picture"
+          src="/images/avatar-michelle.jpg"
+          alt="Michelle profile picture"
+        />
 
-    Michelle Appleton
-    28 Jun 2020
+        <h2 class="article__author--name">Michelle Appleton</h2>
+        <p class="article__publish-date">28 Jun 2020</p>
 
-    Share
+        <img class="article__share--button" src="/images/icon-share.svg" alt="" />
+
+        <div class="article__share--toggle">
+          <p class="share__text">Share</p>
+          <img class="share__icon" src="/images/icon-facebook.svg" alt="Facebook icon" />
+          <img class="share__icon" src="/images/icon-twitter.svg" alt="Twitter icon" />
+          <img class="share__icon" src="/images/icon-pinterest.svg" alt="Pinterest icon" />
+        </div>
+      </section>
+    </article>
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
 </html>
