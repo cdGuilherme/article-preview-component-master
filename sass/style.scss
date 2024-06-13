@@ -26,7 +26,7 @@ body {
 }
 
 .card__article {
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
 }
 
 .article__title {
@@ -37,32 +37,35 @@ body {
   color: v.$desaturated-dark-blue;
 }
 
-.article__footer {
-  display: flex;
-  gap: 1rem;
-  width: 100%;
-  margin-top: 2rem;
-  align-items: stretch;
+.card__footer {
+  padding: 1rem 2rem 2rem 2rem;
 }
 
-.article__author--profile-picture {
+.footer__attribution {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  width: 100%;
+}
+
+.attribution__author--profile-picture {
   height: 2.5rem;
   border-radius: 100%;
 }
 
-.footer__description {
+.attribution__description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.article__author--name,
-.article__publish-date {
+.attribution__author--name,
+.attribution__publish-date {
   margin: 0;
   font-size: 0.75rem;
 }
 
-.article__share--button {
+.attribution__share--button {
   align-self: center;
   margin-left: auto;
   background-color: v.$light-grayish-blue;
@@ -79,6 +82,6 @@ body {
   }
 }
 
-.article__share--toggle {
+.attribution__share--toggle {
   display: none;
 }
