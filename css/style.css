@@ -44,16 +44,8 @@ label {
   line-height: 1.1;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  text-wrap: balance;
-}
-
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
   color: currentColor;
 }
 
@@ -95,3 +87,35 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(210, 46%, 95%);
+  color: hsl(217, 19%, 35%);
+}
+
+.card {
+  margin: 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.illustration__image {
+  width: 100%;
+  aspect-ratio: 1.64/1;
+  object-fit: cover;
+}
+
+.card__article {
+  padding: 2em;
+}
+
+.article__title {
+  line-height: 1.25em;
+}
+
+.article__share--toggle {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
