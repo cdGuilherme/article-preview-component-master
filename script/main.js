@@ -1,3 +1,4 @@
-console.log("Hello World!");
-
-console.log(document.getElementsByName("body"));
+function toggleShare() {
+  let shareComponent = document.getElementById("toggle");
+  shareComponent.classList.toggle("hidden");
+}
