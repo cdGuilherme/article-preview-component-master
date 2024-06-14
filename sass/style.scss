@@ -38,7 +38,9 @@ body {
 }
 
 .card__footer {
-  padding: 1rem 2rem 2rem 2rem;
+  // padding-top; padding-right; padding-bottom; padding-left;
+  padding: 1rem 2rem 1rem 2rem;
+  position: relative;
 }
 
 .footer__attribution {
@@ -80,8 +82,29 @@ body {
     width: 1rem;
     display: block;
   }
+  z-index: 1;
 }
 
 .attribution__share--toggle {
-  display: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: v.$very-dark-grayish-blue;
+  color: v.$grayish-blue;
+  height: 100%;
+  min-width: 100%;
+  padding: 1.375rem;
+  padding-left: 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  img {
+    height: 1.25rem;
+  }
+}
+
+.share__text {
+  margin: auto 0;
+  letter-spacing: 0.3076em; // 4px
 }

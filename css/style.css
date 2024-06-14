@@ -123,7 +123,8 @@ body {
 }
 
 .card__footer {
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
+  position: relative;
 }
 
 .footer__attribution {
@@ -159,6 +160,7 @@ body {
   width: 2rem;
   align-content: center;
   justify-content: center;
+  z-index: 1;
 }
 .attribution__share--button img {
   margin: auto;
@@ -168,5 +170,25 @@ body {
 }
 
 .attribution__share--toggle {
-  display: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(212, 23%, 69%);
+  height: 100%;
+  min-width: 100%;
+  padding: 1.375rem;
+  padding-left: 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.attribution__share--toggle img {
+  height: 1.25rem;
+}
+
+.share__text {
+  margin: auto 0;
+  letter-spacing: 0.3076em;
 }/*# sourceMappingURL=style.css.map */
