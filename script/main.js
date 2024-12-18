@@ -16,9 +16,9 @@ function toggleShare() {
 
   if (isToggleActive) {
     document.getElementById("toggle-button").style.backgroundColor = "#6d7f97";
-    document.getElementById("toggle-button--image").src = "/images/icon-share-active.svg";
+    document.getElementById("toggle-button__image").src = "/images/icon-share-active.svg";
   } else {
     document.getElementById("toggle-button").style.backgroundColor = "#ecf2f8";
-    document.getElementById("toggle-button--image").src = "/images/icon-share.svg";
+    document.getElementById("toggle-button__image").src = "/images/icon-share.svg";
   }
 }
