@@ -5,15 +5,20 @@ function toggleShare() {
 
   // get the current color of the toggle button element so we can
   // change to the correct colors
-  var currentColor = document.getElementById("toggle-button").style.backgroundColor;
+  let currentColor = document.getElementById("toggle-button").style.backgroundColor;
+  let isToggleActive = false;
 
   if (currentColor != "rgb(109, 127, 151)") {
-    // active state
-    document.getElementById("toggle-button").style.backgroundColor = "#6d7f97";
-    document.getElementById("toggle-button--image").src="/images/icon-share-active.svg";
+    isToggleActive = true;
   } else {
-    // not active
+    isToggleActive = false;
+  }
+
+  if (isToggleActive) {
+    document.getElementById("toggle-button").style.backgroundColor = "#6d7f97";
+    document.getElementById("toggle-button--image").src = "/images/icon-share-active.svg";
+  } else {
     document.getElementById("toggle-button").style.backgroundColor = "#ecf2f8";
-    document.getElementById("toggle-button--image").src="/images/icon-share.svg";
+    document.getElementById("toggle-button--image").src = "/images/icon-share.svg";
   }
 }
