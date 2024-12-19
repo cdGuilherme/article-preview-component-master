@@ -13,9 +13,15 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   margin: 1.5rem;
   border-radius: 0.5rem;
   background-color: v.$white;
+}
+
+.card__body {
+  position: relative;
 }
 
 .illustration__image {
@@ -25,7 +31,7 @@ body {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.card__article {
+.body__article {
   padding: 2rem 2rem 1rem 2rem;
 }
 
@@ -33,11 +39,12 @@ body {
   line-height: 1.25em;
 }
 
-.article__description, .article__publish-date {
+.article__description,
+.article__publish-date {
   color: v.$desaturated-dark-blue;
 }
 
-.card__footer {
+.body__footer {
   // padding-top; padding-right; padding-bottom; padding-left;
   padding: 1rem 2rem 1rem 2rem;
   position: relative;
@@ -111,4 +118,31 @@ body {
 
 .hidden {
   display: none;
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    // background-color: black;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .illustration__image {
+    aspect-ratio: 0;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  // hacky alignment to the bottom?
+  .body__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .attribution__share--toggle {
+    // border-radius: 0 0 0.5rem 0;
+    border-radius: 0;
+  }
 }
